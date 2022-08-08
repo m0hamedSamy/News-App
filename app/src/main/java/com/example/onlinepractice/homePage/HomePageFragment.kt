@@ -49,20 +49,6 @@ class HomePageFragment : Fragment(R.layout.fragment_home_page), ArticleAdapter.O
         })
 
 
-
-    }
-
-    fun getRandomItems(): Array<com.example.onlinepractice.homePage.Item> {
-        return Array(100) {
-            val text = "Random Text"
-            val imgSrc = getRandomImg()
-            Item(text, imgSrc)
-        }
-    }
-
-    fun getRandomImg(): String {
-        val rand = (50..100).random()
-        return "https://picsum.photos/$rand"
     }
 
     override fun onArticleClicked(position: Int) {

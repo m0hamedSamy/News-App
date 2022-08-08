@@ -40,7 +40,7 @@ class ArticleAdapter(var articles: List<Article>?, val onArticleListener: OnArti
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ArticleViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.post_layout, parent, false)
+            .inflate(R.layout.article_layout, parent, false)
 
         return ArticleViewHolder(view, onArticleListener)
     }
